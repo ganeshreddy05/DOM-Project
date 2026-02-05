@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f3f5;
+  color: #333;
+}
+
+header {
+  background-color: #5f6caf;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#newBookBtn {
+  background: #fff;
+  border: none;
+  color: #5f6caf;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+#bookFormContainer {
+  margin-bottom: 1.5rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.hidden {
+  display: none;
+}
+
+#bookForm input[type="text"],
+#bookForm input[type="number"] {
+  width: 100%;
+  padding: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+#bookForm button {
+  background-color: #5f6caf;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+}
+
+#library {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.bookCard {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.bookCard h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.bookCard p {
+  margin: 0.5rem 0;
+}
+
+.bookCard button {
+  margin-top: 0.5rem;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.read-toggle {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.not-read {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.delete-btn {
+  background: #ccc;
+  color: #333;
+  margin-left: 5px;
+}

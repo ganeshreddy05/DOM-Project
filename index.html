@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1> My Virtual Library</h1>
+    <button id="newBookBtn">+ Add Book</button>
+  </header>
+
+  <main>
+    <div id="bookFormContainer" class="hidden">
+      <form id="bookForm">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <input type="number" id="pages" placeholder="Pages" required min="1">
+        
+        <label>
+          <input type="checkbox" id="read"> Already read
+        </label>
+
+        <button type="submit">Add Book</button>
+      </form>
+    </div>
+
+    <div id="library"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
